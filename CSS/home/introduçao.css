@@ -1,0 +1,62 @@
+.introduçao-bg {
+  background: var(--cor-12) url("../../img/bottom-left.svg") no-repeat bottom
+    160px left 20px;
+
+  box-shadow: inset 0 -120px var(--cor-0);
+}
+.introduçao {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 0px 40px;
+}
+/* .introduçao p {
+  grid-column: 1;
+}
+.introduçao a {
+  grid-column: 1;
+}
+.introduçao img {
+  grid-column: 2;
+  grid-row: 1/3;
+} usando div no lugar de grid */
+.introduçao-conteudo {
+  align-self: end; /*alinhar para a parte de baixo*/
+  padding-bottom: 200px;
+}
+
+.introduçao img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.introduçao h1 {
+  margin-bottom: 32px;
+}
+
+.introduçao p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .introduçao-bg {
+    background: var(--cor-11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px var(--cor-0);
+  }
+  .introduçao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introduçao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introduçao h1 {
+    margin-bottom: 16px;
+  }
+
+  .introduçao img {
+    height: 300px;
+    width: 100%;
+  }
+}
